@@ -12,3 +12,5 @@
 ```
 docker run -p 8080:8080 -v ./data:/data -v ./keys:/keys:ro ghcr.io/aplicon-ru/control
 ```
+
+<!-- verify DCO + Codecov app wiring; PR will be closed without merge -->
