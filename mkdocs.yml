@@ -1,0 +1,48 @@
+site_name: Univerkon Control
+site_description: Единая операционная консоль экосистемы Универкон
+site_url: https://aplicon-ru.github.io/control/
+repo_url: https://github.com/aplicon-ru/control
+repo_name: aplicon-ru/control
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+
+nav:
+  - Обзор: index.md
+  - Спецификация: spec.md
+  - ADR:
+      - adr/index.md
+      - "0001 — Envelope encryption": adr/0001-secrets-encryption.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search

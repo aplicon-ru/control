@@ -1,0 +1,33 @@
+name: Bug report
+description: Что-то работает не так, как описано в docs/spec.md
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Что произошло
+      description: Что ожидалось и что случилось вместо этого
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Шаги воспроизведения
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Версия ukon
+      placeholder: v0.1.0 / edge / commit sha
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Логи
+      description: Структурированные JSON-логи CP, если есть (без секретов)
+      render: shell

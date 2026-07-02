@@ -1,0 +1,18 @@
+# Go build artifacts
+/ukon
+/bin/
+*.test
+*.out
+
+# Local data (spec §6: SQLite + master.key are runtime state, not source)
+/data/
+/keys/
+*.db
+
+# mkdocs build output
+/site/
+
+# editor/OS
+.DS_Store
+.vscode/
+.idea/

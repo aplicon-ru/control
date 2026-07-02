@@ -1,0 +1,15 @@
+name: Question
+description: Вопрос по архитектуре, спеке или процессу разработки
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Вопрос
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Контекст
+      description: Что уже прочитано (docs/spec.md, docs/adr/) и что осталось непонятным

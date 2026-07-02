@@ -1,0 +1,29 @@
+name: Feature request
+description: Предложение функциональности, которой ещё нет в docs/spec.md
+labels: [feature]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую проблему решает
+      description: Сценарий IT-персонала, которому это нужно
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Предлагаемое решение
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Рассмотренные альтернативы
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Область
+      options:
+        - label: Это MVP (см. docs/spec.md §13)
+        - label: Это меняет схему БД (migrations/)
+        - label: Это влияет на internal/secrets, internal/auth или internal/license
