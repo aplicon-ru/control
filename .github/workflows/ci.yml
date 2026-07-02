@@ -44,6 +44,8 @@ jobs:
         with:
           files: ./coverage.out
           fail_ci_if_error: false
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: aplicon-ru/control
 
   build:
     runs-on: ubuntu-latest
